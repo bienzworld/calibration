@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+	border: none;
+	display: inline-block;
+    background-color: #5A7AB3;
+    box-shadow: 0 6px #4063A4;
+    font-size: 80%;
+    line-height: 1;
+    position: relative;
+	cursor: pointer;
+    border-radius: 1.5em;
+    top: 0;
+    transition: .2s box-shadow,.2s top,.4s background;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 0 5px #4063A4;
+	top: 1px;
+}
+
+.button:active {
+	box-shadow: 0 0 #4063A4;
+	top: 6px;
+}
+
+#outputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outputTextArea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 50px;
+}
+
+.outputContainerRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.checkbox {
+    margin-left: 10px;
+}
+
+.minNumberTextArea {
+    width: 50px;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 30px;
+    text-align: center;
+}
