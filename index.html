@@ -8,10 +8,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>Calibration</h1>
-        <textarea id="inputText" placeholder="Enter your text here"></textarea>
-        <button onclick="formatText()" class="button">Format Text</button>
-        <div id="outputContainer"></div> <!-- Container for the output text boxes -->
+        <header>
+            <img src="source/image/logo.png" alt="Faraday Factory Logo" class="logo">
+            <div class="header-text">
+                <h1>Calibration</h1>
+            </div>
+            <div class="version">v1.0</div>
+        </header>
+        <div class="form-container">
+            <textarea id="inputText" placeholder="Enter your text here"></textarea>
+            <button onclick="formatText()" class="button">Format Text</button>
+            <div id="errorContainer" class="error"></div> <!-- Container for the error message -->
+            <div id="outputContainer"></div> <!-- Container for the output text boxes -->
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

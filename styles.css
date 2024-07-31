@@ -8,23 +8,54 @@ body {
     background-color: #f0f0f0;
 }
 
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 100px;
+    width: 200px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-text h1 {
+    margin: 0;
+}
+
+.container {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 200em;
+    margin: 2em auto;
+}
+
+.version {
+    font-size: 0.9em;
+    color: gray;
 }
 
 h1 {
     font-size: xx-large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    width: 500px;
 }
 
 textarea {
@@ -63,6 +94,14 @@ button:hover {
 .button:active {
 	box-shadow: 0 0 #4063A4;
 	top: 6px;
+}
+
+#errorContainer {
+    width: 100%;
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 #outputContainer {

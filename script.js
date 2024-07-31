@@ -1,9 +1,13 @@
 function formatText() {
     const inputText = document.getElementById('inputText').value;
     const outputContainer = document.getElementById('outputContainer');
+    const errorContainer = document.getElementById('errorContainer');
     outputContainer.innerHTML = ''; // Clear any previous output
+    errorContainer.innerHTML = ''; // Clear any previous error message
 
     const lines = inputText.split(/ (?=#)/); // Split by spaces before a #
+    let hasError = false;
+
     lines.forEach(line => {
         const match = line.match(/#(\d+) \((\d+)-(\d+)\) (N\d) (\d+)m (Ag|Cu)/);
         if (match) {
@@ -36,6 +40,12 @@ function formatText() {
             outputContainerRow.appendChild(checkbox);
             outputContainerRow.appendChild(minNumberTextArea);
             outputContainer.appendChild(outputContainerRow);
+        } else {
+            hasError = true;
         }
     });
+
+    if (hasError) {
+        errorContainer.innerHTML = 'Error: Invalid or Incorrect input format. Please check your input.';
+    }
 }
